@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+    body {
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+        background-image: url("bg.png");
+        background-position: center center;
+    }
+
+    .paper {
+        background-image: url("paper.png");
+        background-size: 500px;
+        background-position: center center;
+        padding: 20px 100px;
+        transform: rotateZ(-5deg);
+        box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+
+    .paper.heart {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .paper.image {
+        padding: 20px;
+    }
+
+    .paper.image p {
+        font-size: 20px;
+    }
+
+    img {
+        max-height: 200px;
+        width: 100%;
+        user-select: none;
+    }
+
+    .paper.heart::after {
+        content: "";
+        background-image: url('proposal.jpg');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+    }
+
+    .paper:nth-of-type(3n) {
+        background-position: left top;
+    }
+
+    p {
+        font-family: 'Zeyada';
+        font-size: 30px;
+        color: rgb(0, 0, 100);
+        opacity: 0.75;
+        user-select: none;
+
+    }
+
+    .loveTEXT {
+        font-family: Arial, sans-serif;
+        color: #e91e63;
+        font-size: 20px;
+    }
+
+    .loverbtn {
+        font-size: 20px;
+        padding: 12px 24px;
+        margin: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ff4081;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-group {
+        text-align: center;
+    }
+
+    #popup {
+        display: none;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+        background-color: #fff;
+        border: 1px solid #e91e63;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px;
+        color: #e91e63;
+    }
+
+    #popup.fade-in {
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title> My Ranu ❤️</title>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <div id="popup" style="width: 390px;">
+        Lubbbbbbbb uuuuuu mah moon....  😘😘😘
+        <img src="lubu.jpg"
+            style="aspect-ratio: 1/1">
+    </div>
+
+    <div>
+
+        <!-- <a href="https://manaschool.in/"> -->
+        <b class="loveTEXT">হবি তো আমার সারাজীবনের জন্যে,করবি তো বিয়ে ? <br>
+            রানু কে কিন্তু রানী করে রাখবো কথা দিলাম :)
+        </b>
+        <!-- </a> -->
+        <div class="btn-group">
+            <button id="yes-btn" class="loverbtn">হ্যাঁ</button>
+            <button id="no-btn" class="loverbtn">মোটেই না</button>
+        </div>
+    </div>
+
+    <!-- Saravanan Code -->
+    <!-- https://codepen.io/devsaro/pen/wvYPaRg -->
+    <div class="paper heart">
+    </div>
+    <div class="paper image">
+        <p>এই সেই রানুরানী যার জন্যে আমি সমস্ত কিছু করতে রাজি ,</p>
+        <p> সমস্ত যুদ্ধ লড়তে রাজি :)</p>
+        <img src="ranu.jpeg" style="aspect-ratio: 1/1"/>
+    </div>
+    <div class="paper image">
+        <p> যে হাসি শুকিয়ে যাওয়া ফুলবাগানে কুঁড়ি ফোটায়, </p>
+        <p>যে ঠোঁটের মধ্যে লুকিয়ে শতাব্দী প্রাচীন রহস্যের সমাধান ...  </p>
+        <img src="smile.jpeg" />
+    </div>
+    <div class="paper image">
+        <p>বলেছিলাম না আমার কাছে পৃথিবীর সব থেকে শ্রেষ্ঠ কবিতার বই , </p>
+        <p> এই সেই বই ... ❤️ </p>
+        <img src="eyes.jpeg" />
+    </div>
+    <div class="paper">
+        <p class="p1"> দুনিয়ার সব থেকে সুন্দর দেখতে হলো আমার ক্রাশ 😍...  </p>
+        <p class="p2">এটা সরা দেখতে পাবি</p>
+    </div>
+    <div class="paper">
+        <p class="p1">আমার ক্রাশ এর ছবি দেখতে চাইছিলি না ?  </p>
+        
+    </div>
+    <div class="paper">
+        <p class="p1">এক কোণে সরিয়ে নিয়ে যা পেপার গুলোকে ধরে.. </p>
+    </div>
+    <!-- javascript file -->
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let highestZ = 1;
+        class Paper {
+            holdingPaper = false;
+            mouseTouchX = 0;
+            mouseTouchY = 0;
+            mouseX = 0;
+            mouseY = 0;
+            prevMouseX = 0;
+            prevMouseY = 0;
+            velX = 0;
+            velY = 0;
+            rotation = Math.random() * 30 - 15;
+            currentPaperX = 0;
+            currentPaperY = 0;
+            rotating = false;
+            init(paper) {
+                document.addEventListener('mousemove', (e) => {
+                    if (!this.rotating) {
+                        this.mouseX = e.clientX;
+                        this.mouseY = e.clientY;
+                        this.velX = this.mouseX - this.prevMouseX;
+                        this.velY = this.mouseY - this.prevMouseY;
+                    }
+                    const dirX = e.clientX - this.mouseTouchX;
+                    const dirY = e.clientY - this.mouseTouchY;
+                    const dirLength = Math.sqrt(dirX * dirX + dirY * dirY);
+                    const dirNormalizedX = dirX / dirLength;
+                    const dirNormalizedY = dirY / dirLength;
+                    const angle = Math.atan2(dirNormalizedY, dirNormalizedX);
+                    let degrees = 180 * angle / Math.PI;
+                    degrees = (360 + Math.round(degrees)) % 360;
+                    if (this.rotating) {
+                        this.rotation = degrees;
+                    }
+                    if (this.holdingPaper) {
+                        if (!this.rotating) {
+                            this.currentPaperX += this.velX;
+                            this.currentPaperY += this.velY;
+                        }
+                        this.prevMouseX = this.mouseX;
+                        this.prevMouseY = this.mouseY;
+                        paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
+                    }
+                })
+                paper.addEventListener('mousedown', (e) => {
+                    if (this.holdingPaper) return;
+                    this.holdingPaper = true;
+                    paper.style.zIndex = highestZ;
+                    highestZ += 1;
+                    if (e.button === 0) {
+                        this.mouseTouchX = this.mouseX;
+                        this.mouseTouchY = this.mouseY;
+                        this.prevMouseX = this.mouseX;
+                        this.prevMouseY = this.mouseY;
+                    }
+                    if (e.button === 2) {
+                        this.rotating = true;
+                    }
+                });
+                window.addEventListener('mouseup', () => {
+                    this.holdingPaper = false;
+                    this.rotating = false;
+                });
+            }
+        }
+        const papers = Array.from(document.querySelectorAll('.paper'));
+        papers.forEach(paper => {
+            const p = new Paper();
+            p.init(paper);
+        });
+
+
+
+        const noButton = document.getElementById("no-btn");
+        const yesButton = document.getElementById("yes-btn");
+        const popup = document.getElementById("popup");
+
+        noButton.addEventListener("mouseover", () => {
+            noButton.style.position = "absolute";
+            noButton.style.left = Math.random() * 80 + "vw";
+            noButton.style.top = Math.random() * 80 + "vh";
+        });
+
+        yesButton.addEventListener("click", () => {
+            popup.style.display = "block";
+        });
+
+        // Hide the popup initially
+        popup.style.display = "none";
+
+    </script>
+</body>
+
+</html>
